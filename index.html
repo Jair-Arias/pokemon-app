@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokémon Captura</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🧢 Lista de Captura Pokémon</h1>
+
+  <!-- Buscador -->
+  <div class="search-box">
+    <input type="text" id="pokemonInput" placeholder="Buscar Pokémon por nombre..." />
+    <button id="searchBtn" class="btn-buscar">Buscar</button>
+    <p id="errorMessage"></p>
+  </div>
+
+  <!-- Resultado de búsqueda -->
+  <div id="searchResult"></div>
+
+  <h2>📋 Lista de Captura</h2>
+
+  <!-- Botones para eliminar -->
+  <div class="delete-options">
+  <button onclick="deleteAll()">🗑️ Eliminar todos</button>
+  </div>
+
+  <!-- Lista de Pokémon agregados -->
+  <div id="captureList"></div>
+  <div id="pokemon-list"></div>
+
+  <script src="app.js"></script>
+</body>
+
+<footer class="footer">
+  <p>© 2025 App Pokémon - Desarrollado por Jair Arias</p>
+</footer>
+
+</html>
