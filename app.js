@@ -86,28 +86,13 @@ function renderCaptureList() {
   });
 }
 
-// Filtro de búsqueda
-function mostrarListaCaptura() {
-  const lista = document.getElementById("listaCaptura");
-  lista.innerHTML = "";
-
-  const filtro = document.getElementById("filtro").value;
-  const capturados = JSON.parse(localStorage.getItem("capturados")) || [];
-
-  capturados.forEach(pokemon => {
-    const estado = pokemon.estado; // 'capturado' o 'pendiente'
-    if (
-      filtro === "todos" ||
-      (filtro === "capturados" && estado === "capturado") ||
-      (filtro === "pendientes" && estado === "pendiente")
-    ) {
-      const li = document.createElement("li");
-      li.textContent = `${pokemon.nombre} - ${estado}`;
-      lista.appendChild(li);
-    }
-  });
+// Cambiar de estado
+function toggleStatus(index) {
+  captured[index].status = !captured[index].status;
+  renderCaptureList();
 }
 
+// Funciones para eliminar
 function deleteOne(index) {
   if (confirm(`¿Eliminar a ${captured[index].name} de la lista?`)) {
     captured.splice(index, 1);

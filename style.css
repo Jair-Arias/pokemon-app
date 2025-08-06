@@ -82,3 +82,51 @@ button {
   font-size: 14px;
   color: #555;
 }
+
+.pokemon-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+.pokemon-img-nombre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.pokemon-img-nombre img {
+  width: 80px;
+  height: 80px;
+}
+
+.nombre {
+  margin-top: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.pokemon-opciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-eliminar {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 20px;
+  color: crimson;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+
