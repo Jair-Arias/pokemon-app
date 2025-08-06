@@ -14,3 +14,9 @@ App web para buscar Pokémon usando la PokeAPI y agregarlos a una lista de captu
 
 ### 📌 Supuestos
 - La persistencia no es requerida tras recarga (se puede implementar con localStorage si se desea).
+
+### 🌐 Enlace público del proyecto
+Accede a la aplicación desplegada desde AWS en el siguiente enlace:
+
+🔗 [pokemon-app](https://pokemon-app-jairarias.s3.us-east-2.amazonaws.com/index.html)
+
